@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../" />
+    <link rel="stylesheet" href="./styles-8-1.css" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a href="../index-8.htm" class="link-go-back">go back</a>
+    <div class="task">
+      <p class="text">
+        <span class="accent-text">Калькулятор на подіях</span> <br />Створи
+        простий калькулятор на HTML та JavaScript, який реагує на події. У тебе
+        є наступні вимоги: <br />
+        1. Створи HTML-сторінку з такими елементами: <br />
+        --- Два поля вводу для чисел (input типу number). <br />
+        --- Чотири кнопки для операцій: додавання, віднімання, множення та
+        ділення. <br />
+        --- Поле (або блок) для виведення результату. <br />
+        2. Реалізуй у JavaScript обробники подій для кнопок. Логіка повинна бути
+        такою: <br />
+        --- Натискання на кнопку викликає відповідний обчислювальний процес
+        (додавання, віднімання тощо). <br />
+        --- Результат обчислень виводиться в призначене для цього місце.
+        <br />
+        3. Перевір наявність некоректних даних (порожні поля, ділення на нуль) і
+        виводь попередження, якщо щось введено неправильно. <br />
+        <span class="accent-text">Додаткове завдання: <br /></span> --- Додай
+        стилі для кнопок, полів і результату. <br />
+        --- Зроби так, щоб при зміні значень у полях результат автоматично
+        оновлювався (використай подію input).
+      </p>
+    </div>
+
+    <h1 class="main-title">Вирішення</h1>
+
+    <div class="wrap">
+      <form action="" method="post" class="form">
+        <label for="first-number" class="label">
+          Enter first number<input
+            type="number"
+            name="first-number"
+            class="input"
+          />
+        </label>
+        <label for="second-number" class="label">
+          Enter second number<input
+            type="number"
+            name="second-number"
+            class="input"
+          />
+        </label>
+      </form>
+      <ul class="list">
+        <li class="list-item"><button type="button" class="btn">+</button></li>
+        <li class="list-item"><button type="button" class="btn">-</button></li>
+        <li class="list-item"><button type="button" class="btn">*</button></li>
+        <li class="list-item"><button type="button" class="btn">/</button></li>
+      </ul>
+      <div class="result">
+        <p class="text-btn">result: <span class="result-text"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
