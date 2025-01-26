@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../" />
+    <title>Калькулятор</title>
     <link rel="stylesheet" href="./styles-8-1.css" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -40,29 +39,42 @@
     <div class="wrap">
       <form action="" method="post" class="form">
         <label for="first-number" class="label">
-          Enter first number<input
+          <input
             type="number"
+            placeholder="Enter first number"
+            id="first-number"
             name="first-number"
             class="input"
           />
         </label>
         <label for="second-number" class="label">
-          Enter second number<input
+          <input
             type="number"
+            placeholder="Enter second number"
+            id="second-number"
             name="second-number"
             class="input"
           />
         </label>
       </form>
       <ul class="list">
-        <li class="list-item"><button type="button" class="btn">+</button></li>
-        <li class="list-item"><button type="button" class="btn">-</button></li>
-        <li class="list-item"><button type="button" class="btn">*</button></li>
-        <li class="list-item"><button type="button" class="btn">/</button></li>
+        <li class="list-item">
+          <button type="button" class="btn" data-operation="plus" id="add">Додати</button>
+        </li>
+        <li class="list-item">
+          <button type="button" class="btn" data-operation="minus" id="subtract">Відняти</button>
+        </li>
+        <li class="list-item">
+          <button type="button" class="btn" data-operation="multiply" id="multiply" >Множити</button>
+        </li>
+        <li class="list-item">
+          <button type="button" class="btn" data-operation="share" id="divide">Ділити</button>
+        </li>
       </ul>
-      <div class="result">
-        <p class="text-btn">result: <span class="result-text"></span></p>
-      </div>
+       <div class="result" id="result">Результат: </div>
+    <div class="error" id="error-message"></div>
+    
     </div>
+    <script type="module" src="./script-8-1.js"></script>
   </body>
 </html>
