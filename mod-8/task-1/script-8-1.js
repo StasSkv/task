@@ -10,7 +10,6 @@ const refs = {
 };
 
 let currentOperation = null;
-
 function updateResult() {
   const num1 = parseFloat(refs.firstNum.value);
   const num2 = parseFloat(refs.secondNum.value);
